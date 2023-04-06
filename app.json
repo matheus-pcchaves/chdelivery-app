@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "chdelivery",
+    "slug": "chdelivery",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
