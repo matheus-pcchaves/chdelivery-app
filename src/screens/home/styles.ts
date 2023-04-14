@@ -13,7 +13,7 @@ export const Header = styled.View`
 
   background-color: ${({theme}) => theme.colors.blue_light};
   justify-content: flex-end;
-  padding: 32px 24px;
+  padding: 18px 24px;
 `;
 
 export const HeaderContent = styled.View`
@@ -22,9 +22,14 @@ export const HeaderContent = styled.View`
   justify-content: space-between;
 `;
 
-export const Title = styled.Text`
-  font-size: ${RFValue(18)}px;
-  color: ${({theme}) => theme.colors.text_title};
+export const LogoContent = styled.View`
+  flex-direction: column;
+  align-items: center;
+  width: 108px;
+`;
+
+export const LogoText = styled.Text`
+  color: ${({theme}) => theme.colors.shape};
 `;
 
 export const TotalDeliveries  = styled.Text`

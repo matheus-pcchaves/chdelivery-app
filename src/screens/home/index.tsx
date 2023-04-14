@@ -1,13 +1,18 @@
 import React from 'react';
+import { StatusBar, Text } from 'react-native';
+import { RFValue } from 'react-native-responsive-fontsize';
+
+import Logo from '../../assets/logo.svg';
 
 import { 
   Container, 
   Header, 
-  HeaderContent, 
-  Title, 
-  TotalDeliveries 
+  HeaderContent,
+  LogoContent,
+  LogoText,
+  TotalDeliveries, 
 } from './styles';
-import { StatusBar } from 'react-native';
+import theme from '../../styles/theme';
 
 export function Home() {
   return (
@@ -19,8 +24,16 @@ export function Home() {
       />
       <Header>
         <HeaderContent>
-          <Title>ch-delivery</Title>
-          <TotalDeliveries>Total de 32 entregas</TotalDeliveries>
+          <LogoContent>
+            <Logo
+              fill="#ffffff"
+              width={RFValue(34)}
+              height={RFValue(32)}
+            />
+            <LogoText>ch-delivery</LogoText>
+          </LogoContent>
+
+          <TotalDeliveries>total de 32 entregas</TotalDeliveries>
         </HeaderContent>
       </Header>
     </Container>
