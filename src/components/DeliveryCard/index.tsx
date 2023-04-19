@@ -14,7 +14,7 @@ import {
   AddressName,
 } from './styles';
 
-export function Delivery() {
+export function DeliveryCard() {
   return (
     <Container>
         <ProuctsView>
