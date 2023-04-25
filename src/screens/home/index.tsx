@@ -3,6 +3,7 @@ import { StatusBar, Text } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 
 import Logo from '../../assets/logo.svg';
+import { DeliveryCard } from '../../components/DeliveryCard';
 
 import { 
   Container, 
@@ -13,7 +14,6 @@ import {
   LogoText,
   TotalDeliveries, 
 } from './styles';
-import { Delivery } from '../../components/Delivery';
 
 export function Home() {
 
@@ -42,7 +42,7 @@ export function Home() {
       <DeliveryList
         data={[1,2,3,4,5,6,7,8,9]}
         keyExtractor={item => String(item)}
-        renderItem={({item}) => <Delivery/>}
+        renderItem={({item}) => <DeliveryCard/>}
       />
     </Container>
   );
