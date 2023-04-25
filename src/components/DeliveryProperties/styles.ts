@@ -13,6 +13,12 @@ export const Container = styled.View`
   margin-bottom: 8px;
 `;
 
+export const Title = styled.Text`
+  color: ${({theme}) => theme.colors.text_body};
+  font-size: ${RFValue(13)}px;
+  padding: 10px;
+`;
+
 export const Text = styled.Text`
   color: ${({theme}) => theme.colors.text_title};
   font-size: ${RFValue(15)}px;

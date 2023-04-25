@@ -2,17 +2,20 @@ import React from 'react';
 
 import { 
   Container,
-  Text 
+  Text,
+  Title 
 } from './styles';
 
 interface Props {
-  title: string;  
+  title: string; 
+  text: string; 
 }
 
-export function DeliveryProperties({ title }: Props) {
+export function DeliveryProperties({ title, text }: Props) {
   return (
     <Container>
-        <Text>{title}</Text>
+      <Title>{title}</Title>
+      <Text>{text}</Text>
     </Container>
   );
 }
