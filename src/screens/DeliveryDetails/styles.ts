@@ -18,38 +18,27 @@ export const Header = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
-  position: absolute;
 
-  margin-top: ${getStatusBarHeight() + 18}px;
+  margin-top: ${getStatusBarHeight() + 10}px;
   margin-left: 24px;
 `;
 
-export const Content = styled.View`
-  width: 100%;
-  margin-top: 120px;
+export const Title = styled.Text`
+  color: ${({theme}) => theme.colors.text_body};
+  font-size: ${RFValue(18)}px;
+
+  margin-top: 35px;
+  margin-left: 25px;
 `;
 
-export const DeliveryList = styled(FlatList).attrs({
+export const Content = styled.ScrollView.attrs({
   contentContainerStyle: {
+    alignItems: 'center',
     padding: 24
   },
   showVerticalScrowIndicator: false
 })``;
 
-export const Maps = styled.View`
-  width: 100%;
-  height: 300px;
-  padding: 24px;
-`;
-
-export const TitleMaps = styled.Text`
-  color: ${({theme}) => theme.colors.text_body};
-  font-size: ${RFValue(20)}px;
-  margin: 10px 0;
-`;
-
 export const Footer = styled.View`
-  width: 100%;
   padding: 24px;
 `;
