@@ -3,7 +3,11 @@ import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 
 interface ButtonProps extends RectButtonProps {
-  color?: string;  
+  background?: string;
+}
+
+interface TextProps {
+  color?: string;
 }
 
 export const Container = styled(RectButton)<ButtonProps>`
@@ -12,11 +16,11 @@ export const Container = styled(RectButton)<ButtonProps>`
   padding: 19px;
   align-items: center;
   justify-content: center;
-
-  background-color: ${({ color, theme }) => color ? color : theme.colors.blue_light};
+  
+  background-color: ${({ background, theme }) => background ? background : theme.colors.blue_light};
 `;
 
-export const Title = styled.Text`
+export const Title = styled.Text<TextProps>`
   font-size: ${RFValue(15)}px;
-  color: ${({theme}) => theme.colors.shape};
+  color: ${({color, theme}) => color ? color : theme.colors.shape};
 `;

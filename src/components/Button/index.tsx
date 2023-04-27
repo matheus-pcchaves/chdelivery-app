@@ -6,14 +6,15 @@ import {
 } from './styles';
 
 interface Props {
+  background?: string;
   color?: string;
   title: string;  
 }
 
-export function Button({color, title, ...rest}: Props) {
+export function Button({background, color, title, ...rest}: Props) {
   return (
-    <Container color={color} {...rest}>
-      <Title>{title}</Title>
+    <Container background={background} {...rest}>
+      <Title color={color}>{title}</Title>
     </Container>
   );
 }
