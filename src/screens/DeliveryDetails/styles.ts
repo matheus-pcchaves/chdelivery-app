@@ -1,8 +1,6 @@
-import styled from 'styled-components/native';
-
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { RFValue } from 'react-native-responsive-fontsize';
-import { FlatList } from 'react-native';
+import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
@@ -32,12 +30,31 @@ export const Title = styled.Text`
 `;
 
 export const Content = styled.ScrollView.attrs({
-  contentContainerStyle: {
-    alignItems: 'center',
-    padding: 24
-  },
-  showVerticalScrowIndicator: false
-})``;
+    contentContainerStyle: { 
+      flexDirection: 'column',  
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: 24,
+    },
+    showVerticalScrowIndicator: false
+  })``;
+
+export const Input = styled.TextInput`
+  width: 100%;
+  height: 55px;
+
+  margin-top: 14px;
+  
+  color: ${({theme}) => theme.colors.text_body};
+  font-size: ${RFValue(15)}px;
+
+  border-width: 1px;
+  border-color: ${({theme}) => theme.colors.background};
+
+  border-bottom-width: 1px;
+  border-bottom-color: ${({theme}) => theme.colors.text_body};
+  padding-bottom: 5px;
+`;
 
 export const Footer = styled.View`
   padding: 24px;
