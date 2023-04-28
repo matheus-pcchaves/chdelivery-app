@@ -32,8 +32,8 @@ export function SignIn() {
           <BrandText>O seu app de pedidos e entregas!</BrandText>
         </LogoContent>
 
-        <Input>Email</Input>
-        <Input>Senha</Input>
+        <Input placeholder='Email'></Input>
+        <Input placeholder='Senha'></Input>
         <Submit>
           <Button title='Entrar'/>
         </Submit>

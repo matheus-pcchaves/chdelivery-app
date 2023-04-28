@@ -38,9 +38,9 @@ export function SignUp() {
           <BrandText>O seu app de pedidos e entregas!</BrandText>
         </LogoContent>
 
-        <Input>Nome</Input>
-        <Input>Email</Input>
-        <Input>Senha</Input>
+        <Input placeholder='Nome' placeholderTextColor={theme.colors.background}></Input>
+        <Input placeholder='Email' placeholderTextColor={theme.colors.background}></Input>
+        <Input placeholder='Senha' placeholderTextColor={theme.colors.background}></Input>
         <Submit>
           <Button background={theme.colors.background} color={theme.colors.blue_light} title='Cadastrar'/>
         </Submit>
