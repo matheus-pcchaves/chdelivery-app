@@ -23,7 +23,13 @@ export function MyDeliveries() {
           data={[1,2,3,4,5,6,7,8,9]}
           keyExtractor={item => String(item)}
           renderItem={({item}) => 
-            <DeliveryCard info='Status' infoDetail='Pendente' product='Geladeira' address='Rua José Arigó, 1040'/>
+            <DeliveryCard
+              info='Status' 
+              type='Finalizado' 
+              infoDetail='Finalizado'
+              product='Geladeira' 
+              address='Rua José Arigó, 1040'
+            />
           }
         />
     </Container>
