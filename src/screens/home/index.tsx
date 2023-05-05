@@ -42,7 +42,13 @@ export function Home() {
       <DeliveryList
         data={[1,2,3,4,5,6,7,8,9]}
         keyExtractor={item => String(item)}
-        renderItem={({item}) => <DeliveryCard/>}
+        renderItem={({item}) => 
+          <DeliveryCard 
+            info='Categoria'
+            infoCategory='Eletrodomésticos' 
+            product='Geladeira' 
+            address='Rua José Arigó, 1040'/>
+        }
       />
     </Container>
   );

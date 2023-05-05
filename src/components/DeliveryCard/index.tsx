@@ -14,22 +14,29 @@ import {
   AddressName,
 } from './styles';
 
-export function DeliveryCard() {
+interface Props {
+  info?: string;
+  infoDetail?: string;
+  product?: string;
+  address?: string;
+}
+
+export function DeliveryCard({ info, infoDetail, product, address }: Props) {
   return (
     <Container>
         <ProuctsView>
-            <Category>Categoria</Category>
-            <Name>Eletrodomésticos</Name>
+            <Category>{info}</Category>
+            <Name>{infoDetail}</Name>
 
             <DetailsView>
                 <ProductsView>
                     <Product>Produto</Product>
-                    <ProductName>Micro-ondas</ProductName>
+                    <ProductName>{product}</ProductName>
                 </ProductsView>
 
                 <AddressView>
-                    <Address>CEP</Address>
-                    <AddressName>14092-172</AddressName>
+                    <Address>Endereço</Address>
+                    <AddressName>{address}</AddressName>
                 </AddressView>
             </DetailsView>
         </ProuctsView>
